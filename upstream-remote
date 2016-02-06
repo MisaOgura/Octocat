@@ -1,1 +1,14 @@
-Explain what the "upstream" remote is usually used for, in your own words
+In Github, the upstream remote is used to syc the changes you make in your fork. When you create a fork from the original repo, the communication between the origin and the master (push/pull) is performed between the local repo and the form on your github.
+
+In order for any changes made in the fork to be reflected, they have to be synced with a upstream remote.
+
+To check the remote:
+	$ git remote -v
+
+To add upstream remote:
+	$ git remote add upstream <URL of the ORIGINAL repo>
+
+To sync:
+	$ git fetch upstream
+	$ git checkout master
+	$ git merge upstrea/master
