@@ -1,1 +1,16 @@
-Explain what a branch is, in your own words
+A branch is a "parallel reality" stemming from the master, where the changes made are sotred separately from the masters. We can swtich between different branches. Changes made in a branch can be merged with the master, as long as there are no conflicts. In case of conflicts, manually edit the file to resolve.
+
+To merge:
+	$ git checkout <branch>
+	$ git merge master
+
+Rebasing:
+Alternatively, to have a cleaner history of commits, we can "rebase" the branch to the master. Checkout each branch and master, reset to the point just before the merge using hash like so:
+
+	$ git reset --hard <hash>
+
+Then rebase as follows:
+
+	$ git checkout <branch>
+	$ git rebase master
+	$ git hist (make sure the graph is one line)
