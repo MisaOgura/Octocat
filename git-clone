@@ -1,1 +1,7 @@
-Explain what git clone does, in your own words
+The "git clone" create a copy of a repository either locally or from the Github.
+
+Local cloning:
+	$ git clone <name of original repo> <name of cloned repo>
+
+Cloning a repo from Github:
+	$ git clone <URL of the repo>
